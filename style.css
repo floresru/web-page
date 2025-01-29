@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    text-decoration: none;
+    
+}
+
+body{
+    background-color: black;
+}
+
+@font-face{
+    font-family: 'KHfont';
+    src: url(./recursos/fonts/Kingdom_Hearts_Font.ttf) format(truetype);
+    
+}
+
+.logo{
+    padding-left: 4%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap :65%;
+}
+
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+    gap: 30%;
+}
+
+nav li {
+    font-family: 'KHfont';
+    font-size: 3rem;
+    
+}
+
+h1{
+    text-align: center;
+    font-family: 'KHfont' ;
+    font-size: 15rem;
+    letter-spacing: 2rem;
+    z-index: 1;
+    position:absolute;
+    top:30%;
+    left: 5%;
+    filter: drop-shadow(0 0 0.75rem rgb(5, 55, 129));
+}
+
+.banner{
+    padding-top: 30%;
+    background-image: url("./recursos/banner_inicial.jpg");
+    filter: blur(1px);
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Cambia a diseño vertical */
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column; /* Lista vertical */
+        gap: 10px; /* Espaciado reducido */
+    }
+
+    nav li {
+        font-size: 2rem; /* Tamaño de fuente más pequeño */
+        padding-right: 0; /* Elimina el espaciado derecho */
+    }
+}
